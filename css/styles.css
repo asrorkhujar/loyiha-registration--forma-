@@ -62,7 +62,7 @@ html {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 950px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -83,7 +83,8 @@ body{
 .registration-all{
   display: flex;
   align-items: center;
-  margin-top: 100px;
+  margin: 100px auto;
+
 }
 .registration-left{
 width: 350px;
@@ -183,9 +184,65 @@ display: flex;
 }
 
 .field-radio{
-  margin-bottom: 15px;
-  /* width: 100px; */
+  display: none;
+
 }
+
+.gender-male-label{
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  padding-left: 30px;
+}
+
+.gender-male-label::before{
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #f5f8f9;
+  margin-left: 30px;
+  position: absolute;
+  left: -40px;
+  top: -5px;
+  background-image: url("../img/male.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.field-radio:checked+.gender-male-label::before{
+  background-color: #FFD500;
+}
+
+.gender-female-label{
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  padding-left: 30px;
+}
+
+.gender-female-label::before{
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #f5f8f9;
+  margin-left: 30px;
+  position: absolute;
+  left: -40px;
+  top: -5px;
+  background-image: url("../img/female.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.field-radio:checked+.gender-female-label::before{
+  background-color: #FFD500;
+}
+
+
+
+
 
 .gender span{
   width: 100px;
@@ -197,6 +254,7 @@ display: flex;
 
 .male-radio{
   margin-right: 30px;
+  margin-bottom: 15px;
 }
 
 .gender label{
@@ -211,6 +269,7 @@ display: flex;
 text-align: center;
 width: 310px;
 margin-left: 100px;
+margin-top: 30px;
 }
 .button{
   padding: 15px;
@@ -228,4 +287,31 @@ margin-right: 10px;
 .save{
 color: var(--white);
 background-color: var(--cyan);
+}
+
+
+.cards{
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  padding-left: 30px;
+}
+
+.cards::before{
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #C7C7C7;
+  margin-left: 30px;
+  position: absolute;
+  left: -40px;
+  top: -5px;
+  background-image: url("../img/card.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.field-radio:checked + .cards::before{
+  background-color: #FFD500;
 }
