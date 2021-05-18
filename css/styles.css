@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Light.woff2") format("woff2"),
+      url("../fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Medium.woff2") format("woff2"),
+      url("../fonts/Raleway-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Black.woff2") format("woff2"),
+      url("../fonts/Raleway-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2"),
+      url("../fonts/Raleway-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root {
+  --yellow: #FFD500;
+  --white: #fff;
+  --bodycolor:#F2F2F2;
+  --cyan: #60E6C5;
+  --dark:#383838;
+  --black: #373D40;
+  --grey:#B1BFCD;
+  --main-font: "Raleway", "Arial", sans-serif;
+  --padding: 13px;
+}
+
+
+
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body{
+
+  padding: 0;
+  margin: 0;
+  font-family: var(--main-font);
+  background-color: var(--bodycolor);
+  font-size: 12px;
+  font-weight: 400;
+  color: #373D40;
+
+}
+.registration-all{
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+.registration-left{
+width: 350px;
+height: 501px;
+background: #FFD500;
+border-radius: 21.25px 0px 0px 21.25px;
+padding: 90px 55px 60px 55px;
+
+}
+
+.registration-left-head h2{
+font-weight: 900;
+font-size: 18px;
+line-height: 21px;
+color: #383838;
+text-align: center;
+margin: 0;
+
+}
+.registration-left-head p{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
+  color: #383838;
+}
+
+.registration-left-head::before{
+  content: "";
+  background-image: url("../img/user-icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.registration-left-head a::before{
+  content: "";
+  background-image: url("../img/next-icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.registration-right{
+  width: 550px;
+  height: 501px;
+  padding-top: 55px;
+  padding-right: 70px;
+  padding-bottom: 55px;
+  padding-left: 70px;
+  background: #FFFFFF;
+  border-top-right-radius: 21.25px;
+  border-bottom-right-radius:21.25px ;
+}
+
+.field{
+  width: 350px;
+  padding: var(--padding);
+  margin-bottom: 15px;
+  background: #F5F8F9;
+border-radius: 3px;
+border: none;
+
+}
+label{
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.input-group{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.radio-button{
+display: flex;
+}
+
+.field-radio{
+  margin-bottom: 15px;
+  /* width: 100px; */
+}
+
+.gender span{
+  width: 100px;
+}
+
+.field-radio{
+  margin-right: 15px;
+}
+
+.male-radio{
+  margin-right: 30px;
+}
+
+.radio-membership span{
+  width: 100px;
+}
+
+.buttons{
+text-align: center;
+width: 310px;
+margin-left: 100px;
+}
+.button{
+  padding: 15px;
+  text-transform: uppercase;
+  width: 120px;
+  border: none;
+  border-radius: 3px;
+}
+
+.cancel{
+color: var(--black);
+margin-right: 10px;
+}
+
+.save{
+color: var(--white);
+background-color: var(--cyan);
+}

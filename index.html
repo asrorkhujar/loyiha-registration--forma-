@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration form</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<main class="site-content">
+  <div class="container registration-all">
+    <section class="registration-left">
+      <div class="registration-left-head">
+        <h2>Let’s get you set up</h2>
+        <p>Itshould only take a couple of minutes
+          to pair with your watch</p>
+          <a href="#"></a>
+      </div>
+
+    </section>
+
+    <section class="registration-right">
+      <form class="reg-form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="input-group">
+          <label class="input-items" for="name-input">Name</label>
+          <input class="field" type="text" name="name" id="name-input" aria-label="Name" placeholder="Name" required></div>
+
+        <div class="radio-button gender">
+          <span>Gender</span>
+          <div class="male-radio">
+            <input class="field-radio" type="radio" name="gender" value="Male" id="male">
+            <label for="male">Male</label>
+          </div>
+          <div class="female-radio">
+            <input class="field-radio" type="radio" name="gender" value="Female" id="female">
+            <label for="female">Female</label>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label class="input-items" for="data-input">Date of Birth</label>
+          <input class="field" id="data-input" type="date" name="data" aria-label="01/02/1983" placeholder="data" required></div>
+
+        <div class="input-group">
+          <label class="input-items" for="email-input">Email</label><input class="field" id="email-input" type="email" name="email" aria-label="Email" placeholder="cendall@email.com" required></div>
+        <div class="input-group">
+          <label class="input-items" for="phone-input">Mobile</label>
+          <input class="field" id="phone-input" type="tel" name="phone" aria-label="phone" placeholder="+91 98765 43210" required></div>
+        <div class="input-group">
+          <label class="input-items" for="customer-input">Customer ID</label>
+          <input class="field" id="customer-input" type="text" name="customer-id" aria-label="customer-id" placeholder="576802-ERD0348 45" required></div>
+
+        <div class="radio-button radio-membership">
+          <span>Membership</span>
+          <label>
+            <input class="field-radio" type="radio" name="membership" value="Classic">
+            <span>Classic</span>
+          </label>
+          <label>
+            <input class="field-radio" type="radio" name="membership" value="Silver">
+            <span>Silver</span>
+          </label>
+          <label>
+            <input class="field-radio" type="radio" name="membership" value="Gold">
+            <span>Gold</span>
+          </label>
+        </div>
+
+
+        <div class="buttons">
+          <button class="button cancel">cancel</button>
+          <button class="button save" type="submit">save</button>
+        </div>
+
+      </form>
+    </section>
+  </div>
+
+
+</main>
+
+<body>
+
+
+
+</body>
+
+</html>
