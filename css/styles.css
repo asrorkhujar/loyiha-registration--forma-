@@ -156,8 +156,17 @@ margin: 0;
   margin-bottom: 15px;
   background: #F5F8F9;
 border-radius: 3px;
-border: none;
+border: 1px solid transparent;
+outline: none;
 
+}
+
+.field::placeholder{
+  color: var(--grey);
+}
+
+.field:focus{
+  border: 1px solid #CAD7DD;
 }
 label{
   width: 100px;
@@ -188,6 +197,10 @@ display: flex;
 
 .male-radio{
   margin-right: 30px;
+}
+
+.gender label{
+  color: var(--grey);
 }
 
 .radio-membership span{
